@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 600px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin: 10% auto;
+background-color: aquamarine;
+border-radius: 6px;
+padding: 15px 13px;
+border: 2px dotted rgb(102, 202, 239);
+}
+.container .heading{
+    font-size: 27px;
+    font-weight: 600;
+    font-family: 'Times New Roman',sans-serif;
+    color: #123455;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+.container .box{
+    width: 90%;
+    background-color: #341213;
+    color: #ffffff;
+    padding: 12px 18px;
+    border-radius: 10px;
+}
+.box .box-item{
+    display: flex;
+    align-items: center;
+     margin: 12px 6px;
+}
+.box-item label{
+    font-size: 18px;
+}
+.box-item input{
+    font-size: 18px;
+    outline: none;
+    border-radius: 6px;
+    padding: 6px 4px;
+    margin-left: 6px;
+}
+#convertBtn{
+    padding: 6px 18px;
+    margin: 12px 0px;
+    font-size: 23px;
+    font-family: cursive;
+    background: green;
+    cursor: pointer;
+    color: #ffffff;
+    box-shadow: 2px 2px 1px #ffffff,-2px 3px 1px red;
+}
+
+@media only screen and (max-width: 500px){
+    .container{
+        width: 350px;
+    }
+    .container .heading{
+        font-size: 23px;
+        letter-spacing: 2px;
+    }
+    .container .box{
+        width: 95%;
+        padding: 8px 12px;
+        border-radius: 8px;
+    }
+    .box .box-item{
+       flex-direction: column;
+         margin: 16px 10px;
+    }
+    .box-item label{
+        font-size: 23px;
+    }
+    .box-item input{
+        padding: 6px 4px;
+       margin-top: 8px;
+    }
+}
